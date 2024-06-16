@@ -1,0 +1,12 @@
+{
+  "family": "dtterralith:mangrove_noroots",
+  "tapering": 0.3,
+  "leaves_properties": "bare",
+  "does_rot": false,
+  "generate_seed": false,
+  "generate_sapling": false,
+  "acceptable_soils": ["dirt_like", "mud_like", "snow_like"],
+  "features" : [
+    "dtterralith:random_stripped_branches"
+  ]
+}

@@ -90,7 +90,6 @@
       }
     }
   },
-  
   {
     "_comment": "minecraft:plain_vegetation",
     "select": { "name": "terralith:cave/desert_caves" },
@@ -537,9 +536,9 @@
     "apply": {
       "species" : {
         "random" : {
-          "dtterralith:scruffy_swamp_oak" : 1,
-          "dtterralith:sparse_swamp_oak" : 4,
-          "dtterralith:dead_oak" : 1
+          "dtterralith:scruffy_swamp_mangrove" : 1,
+          "dtterralith:sparse_swamp_mangrove" : 4,
+          "dtterralith:dead_mangrove" : 1
         }
       },
       "density": 0.3,
@@ -793,7 +792,9 @@
       "species" : {
         "random" : {
           "dtterralith:twilight_birch" : 1,
-          "dtterralith:sakura" : 4
+          "dtterralith:sakura" : 2,
+          "cherry" : 2,
+          "dtterralith:cherry_bush" : 1
         }
       },
       "density": 0.3,
@@ -948,7 +949,9 @@
       "species" : {
         "random" : {
           "dtterralith:twilight_birch" : 1,
-          "dtterralith:sakura" : 4
+          "dtterralith:sakura" : 2,
+          "cherry" : 2,
+          "dtterralith:cherry_bush" : 1
         }
       },
       "density": 0.3,
@@ -1021,6 +1024,19 @@
     }
   },
   {
+    "select": { "name": "terralith:snowy_cherry_grove" },
+    "apply": {
+      "species": {
+        "random": {
+          "cherry": 2,
+          "dtterralith:azalea_bush": 1
+        }
+      },
+      "density": [ 0.45 ],
+      "chance": 1.0
+    }
+  },
+  {
     "_comment1": "terralith:highlands/forest/trees_maple_cold",
     "_comment2": "terralith:highlands/forest/tall/trees_tall",
     "_comment3": "terralith:highlands/forest/mid/trees_mid",
@@ -1067,6 +1083,20 @@
       "density": 0.3,
       "chance": 0.3
     }
+  },
+  {
+    "_comment": "terralith:shrubland/bushes",
+    "_comment": "terralith:spires/oak_tree",
+    "_comment": "terralith:spires/azalea_rare",
+    "select": { "name": "terralith:stony_spires" },
+    "apply": {
+      "random" : {
+        "dtterralith:ponderosa_pine": 2,
+        "oak_undergrowth": 1
+      }
+    },
+    "density": 0.3,
+    "chance": 0.3
   },
   {
     "_comment1": "terralith:highlands/temperate/trees_orange",
