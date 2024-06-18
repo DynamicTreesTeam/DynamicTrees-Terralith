@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-16T00:18:10.770268478	Loot Tables
+// 1.20.1	2024-06-18T18:36:34.9762752	Loot Tables
 8e9c3923e97e155eae006c9aba234a94094b684a data/dtterralith/loot_tables/blocks/acacia_amethyst_leaves.json
 b7666a682e7d304413f7b9cd4ea7cad5723d6ece data/dtterralith/loot_tables/blocks/acacia_bush_leaves.json
 f92388adaadb62d0068231e1f29e0f2bad01a440 data/dtterralith/loot_tables/blocks/acacia_conifer_leaves.json
@@ -62,10 +62,8 @@ fdccc0c6a2c38c28cc98ad3065c6e9389fe1c563 data/dtterralith/loot_tables/blocks/spr
 16d9e0fcd941807fc49e403d6923be328d6a5a3c data/dtterralith/loot_tables/blocks/spruce_sparse_leaves.json
 c61378d21ccc2aae2b40567bf485c4274009f37f data/dtterralith/loot_tables/blocks/spruce_tall_conifer_leaves.json
 ae9b3b69c63ee4219c43d7a6d9e400c8e41b8894 data/dtterralith/loot_tables/blocks/spruce_twiglet_leaves.json
-66e61b6f2cb0bc98ff0d597b78b5a0d8553ed3a7 data/dtterralith/loot_tables/trees/branches/mangrove_noroots.json
 fe2f1e3f1fd2dd760b5df7508e0283429640f65f data/dtterralith/loot_tables/trees/branches/mirage.json
 5f4a90262c8381a28efda8c1b7933e99b6f8a13d data/dtterralith/loot_tables/trees/branches/moonlight.json
-4bc22beb85a77926612f60a7785a0774d0694802 data/dtterralith/loot_tables/trees/branches/stripped_mangrove_noroots.json
 28df4eed9122f4be7d2656f5acdb1ad26754c19a data/dtterralith/loot_tables/trees/leaves/acacia_amethyst.json
 f83972b7851bb89c5842212b65b27fc319fea77f data/dtterralith/loot_tables/trees/leaves/acacia_bush.json
 3f58a26a839d0b217e87d2e82206253096d13f6d data/dtterralith/loot_tables/trees/leaves/acacia_conifer.json
