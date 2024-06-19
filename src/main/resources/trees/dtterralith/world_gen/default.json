@@ -1037,6 +1037,19 @@
     }
   },
   {
+    "only_if_loaded": "dtbop",
+    "select": { "name": "terralith:snowy_cherry_grove" },
+    "apply": {
+      "species": {
+        "random": {
+          "dtbop:snowblossom": 1,
+          "cherry": 3,
+          "dtterralith:azalea_bush": 2
+        }
+      }
+    }
+  },
+  {
     "_comment1": "terralith:highlands/forest/trees_maple_cold",
     "_comment2": "terralith:highlands/forest/tall/trees_tall",
     "_comment3": "terralith:highlands/forest/mid/trees_mid",
