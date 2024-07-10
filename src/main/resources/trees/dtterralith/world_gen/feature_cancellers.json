@@ -1,7 +1,7 @@
 [
 	{
 		"_comment": "Cancel any trees from terralith biomes.",
-		"select": { "names": ["terralith:.*" , "!terralith:alpha_islands.*", "!terralith:cave/underground_jungle"] },
+		"select": { "names": ["terralith:.*" , "!terralith:alpha_islands.*"] },
 		"cancellers": {
 			"type": "tree",
 			"namespaces": [ "minecraft", "terralith" ]
@@ -9,7 +9,7 @@
 	},
 	{
 		"_comment": "Cancel any cacti from terralith biomes.",
-		"select": { "names": ["terralith:.*", "!terralith:alpha_islands.*", "!terralith:fungal_caves", "!terralith:cave/underground_jungle"] },
+		"select": { "names": ["terralith:.*", "!terralith:alpha_islands.*"] },
 		"only_if_loaded": "dynamictreesplus",
 		"cancellers": {
 			"types": [ "tree", "mushroom", "dynamictreesplus:cactus" ],

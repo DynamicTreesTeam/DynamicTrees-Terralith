@@ -30,8 +30,7 @@
         }
       },
       "density" : [ 0.8 ],
-      "multipass" : true,
-      "forestness": 1
+      "multipass" : true
     }
   },
   {
@@ -44,7 +43,7 @@
           "..." : 24,
           "dynamictreesplus:red_mushroom" : 1,
           "dynamictreesplus:mega_red_mushroom" : 1,
-          "dynamictreesplus:browm_mushroom" : 1,
+          "dynamictreesplus:brown_mushroom" : 1,
           "dynamictreesplus:mega_brown_mushroom" : 1
         }
       }
@@ -97,6 +96,55 @@
       "species" : "oak",
       "density": 0.05,
       "chance": 0.1
+    }
+  },
+  {
+    "_comment": "",
+    "select": { "name": "terralith:cave/fungal_caves" },
+    "only_if_loaded": "dynamictreesplus",
+    "apply": {
+      "species" : {
+        "random" : {
+          "dynamictreesplus:red_mushroom" : 1,
+          "dynamictreesplus:mega_red_mushroom" : 1,
+          "dynamictreesplus:brown_mushroom" : 1,
+          "dynamictreesplus:mega_brown_mushroom" : 1
+        }
+      },
+      "density": 1,
+      "chance": 1
+    }
+  },
+  {
+    "_comment": "",
+    "select": { "name": "terralith:cave/underground_jungle" },
+    "apply": {
+      "species" : {
+        "random" : {
+          "dtterralith:azalea_bush" : 1,
+          "cherry" : 2,
+          "dtterralith:lush_mangrove" : 4
+        }
+      },
+      "density": 2.5,
+      "chance": 1
+    }
+  },
+  {
+    "_comment": "",
+    "select": { "name": "terralith:cave/underground_jungle" },
+    "only_if_loaded": "dynamictreesplus",
+    "apply": {
+      "species" : {
+        "method" : "splice_before",
+        "random" : {
+          "..." : 16,
+          "dynamictreesplus:red_mushroom" : 1,
+          "dynamictreesplus:brown_mushroom" : 1
+        }
+      },
+      "density": 1,
+      "chance": 1
     }
   },
   {
