@@ -8,7 +8,7 @@
   "soil_longevity": 14,
   "max_branch_radius": 24,
   "growth_logic_kit": "dark_oak",
-  "leaves_properties": "dark_oak",
+  "leaves_properties": "dtterralith:tall_dark_oak",
   "environment_factors" : {
     "cold": 0.75,
     "hot": 0.5,
@@ -17,7 +17,6 @@
   },
   "perfect_biomes": { "type": "spooky", "name": "minecraft:.*" },
   "common_override": { "name": "minecraft:dark_forest" },
-  "generate_sapling": true,
   "primitive_sapling": "dark_oak_sapling",
   "features" : [
     {

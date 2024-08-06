@@ -22,7 +22,6 @@
   "world_gen_leaf_map_height": 70,
   "common_override": { "name": "terralith:wintry.*" },
   "perfect_biomes": { "name": "terralith:wintry.*" },
-  "generate_sapling": true,
   "features" : [
     "conifer_topper",
     {

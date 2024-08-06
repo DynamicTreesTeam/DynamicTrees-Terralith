@@ -29,7 +29,7 @@
           "dtterralith:tall_dark_oak" : 6
         }
       },
-      "density" : [ 0.8 ],
+      "density" : [ 0.9 ],
       "multipass" : true
     }
   },
@@ -40,7 +40,7 @@
       "species" : {
         "method" : "splice_before",
         "random" : {
-          "..." : 24,
+          "..." : 32,
           "dynamictreesplus:red_mushroom" : 1,
           "dynamictreesplus:mega_red_mushroom" : 1,
           "dynamictreesplus:brown_mushroom" : 1,

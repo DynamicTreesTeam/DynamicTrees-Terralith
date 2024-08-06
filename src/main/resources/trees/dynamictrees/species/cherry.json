@@ -6,7 +6,7 @@
   "lowest_branch_height": 4,
   "growth_rate": 0.8,
   "leaves_properties": "cherry",
-  "environment_factors" : {
+  "environment_factors": {
     "#forge:is_cold": 0.75,
     "#forge:is_hot": 0.5,
     "#forge:is_dry": 0.5,
@@ -16,5 +16,9 @@
   "primitive_sapling": "cherry_sapling",
   "acceptable_soils": ["dirt_like", "snow_like"],
   "features" : [
-  ]
+    "bee_nest"
+  ],
+  "lang_overrides": {
+    "seed": "Cherry Blossom Pit"
+  }
 }
