@@ -90,12 +90,12 @@ sourceSets.main.get().resources {
 dependencies {
     minecraft("net.minecraftforge:forge:$mcVersion-${property("forgeVersion")}")
 
-    implementation(fg.deobf("lib:DynamicTrees:1.20.1-1.3.0-BETA13.006"))
-    //implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
+    implementation(fg.deobf("curse.maven:dynamictrees-252818:6410558"))
+    implementation(fg.deobf("curse.maven:dynamictreesplus-478155:6540795"))
     implementation(fg.deobf("curse.maven:terralith-513688:5351328"))
-    implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
     implementation(fg.deobf("curse.maven:jade-324717:${property("jadeVersion")}"))
 
+    implementation(fg.deobf("curse.maven:glitchcore-955399:5787839"))
     runtimeOnly(fg.deobf("mezz.jei:jei-$mcVersion-forge:${property("jeiVersion")}"))
     runtimeOnly(fg.deobf("curse.maven:SereneSeasons-291874:${property("ssVersion")}"))
     runtimeOnly(fg.deobf("vazkii.patchouli:Patchouli:${property("patchouliVersion")}"))
