@@ -40,6 +40,7 @@ val modName = property("modName")
 val modId = property("modId")
 val modVersion = property("modVersion")
 val mcVersion = property("mcVersion")
+val modrinthId = property("modrinthId")
 
 version = "$mcVersion-$modVersion"
 group = property("group")
@@ -177,7 +178,7 @@ modrinth {
     }
 
     token.set(modrinthToken)
-    projectId.set(modId)
+    projectId.set(modrinthId)
     versionNumber.set("$mcVersion-$modVersion")
     versionType.set(optionalProperty("versionType") ?: "release")
     uploadFile.set(tasks.jar.get())
