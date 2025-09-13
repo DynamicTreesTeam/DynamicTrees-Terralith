@@ -4,10 +4,8 @@
     "surface": "floor",
     "depth": {
       "type": "minecraft:biased_to_bottom",
-      "value": {
-        "min_inclusive": 2,
-        "max_inclusive": 4
-      }
+      "min_inclusive": 2,
+      "max_inclusive": 4
     },
     "vertical_range": 3,
     "extra_bottom_block_chance": 0.01,

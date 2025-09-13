@@ -1,8 +1,8 @@
 package maxhyper.dtterralith.genfeatures;
 
 import maxhyper.dtterralith.DynamicTreesTerralith;
-import com.ferreusveritas.dynamictrees.api.registry.Registry;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
+import com.dtteam.dynamictrees.api.registry.Registry;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
 
 public class DTTerralithGenFeatures {
 

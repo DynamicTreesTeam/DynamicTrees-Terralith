@@ -5,17 +5,17 @@ import maxhyper.dtterralith.cellkits.DTTerralithCellKits;
 import maxhyper.dtterralith.genfeatures.DTTerralithGenFeatures;
 import maxhyper.dtterralith.growthlogic.DTTGrowthLogicKits;
 import maxhyper.dtterralith.trees.PoplarSpecies;
-import com.ferreusveritas.dynamictrees.api.cell.CellKit;
-import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
-import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
-import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatures;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+import com.dtteam.dynamictrees.api.cell.CellKit;
+import com.dtteam.dynamictrees.event.RegistryEvent;
+import com.dtteam.dynamictrees.event.TypeRegistryEvent;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
+import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
+import com.dtteam.dynamictrees.tree.species.Species;
+
+@EventBusSubscriber()
 public class DTTRegistries {
 
     public static void setup() {
@@ -24,22 +24,30 @@ public class DTTRegistries {
 
     @SubscribeEvent
     public static void registerSpeciesTypes (final TypeRegistryEvent<Species> event) {
-        event.registerType(DynamicTreesTerralith.location("poplar"), PoplarSpecies.TYPE);
+        if (event.isEntryOfType(Species.class)) {
+            event.registerType(DynamicTreesTerralith.location("poplar"), PoplarSpecies.TYPE);
+        }
     }
 
     @SubscribeEvent
-    public static void onCellKitRegistry(final RegistryEvent<CellKit> event) {
-        DTTerralithCellKits.register(event.getRegistry());
+    public static void registerCells(final RegistryEvent<CellKit> event) {
+        if (event.isEntryOfType(CellKit.class)) {
+            DTTerralithCellKits.register(event.getRegistry());
+        }
     }
 
     @SubscribeEvent
-    public static void onGrowthLogicKitRegistry(final RegistryEvent<GrowthLogicKit> event) {
-        DTTGrowthLogicKits.register(event.getRegistry());
+    public static void registerGrowthLogic(final RegistryEvent<GrowthLogicKit> event) {
+        if (event.isEntryOfType(GrowthLogicKit.class)) {
+            DTTGrowthLogicKits.register(event.getRegistry());
+        }
     }
 
     @SubscribeEvent
-    public static void onGenFeatureRegistry(final RegistryEvent<GenFeature> event) {
-        DTTerralithGenFeatures.register(event.getRegistry());
+    public static void registerGenFeature(final RegistryEvent<GenFeature> event) {
+        if (event.isEntryOfType(GenFeature.class)) {
+            DTTerralithGenFeatures.register(event.getRegistry());
+        }
     }
 
 }

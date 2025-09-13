@@ -1,21 +1,21 @@
 package maxhyper.dtterralith;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class DTTConfigs {
 
-	public static final ForgeConfigSpec GENERAL_SPEC;
+	public static final ModConfigSpec GENERAL_SPEC;
 
 	static {
-		ForgeConfigSpec.Builder configBuilder = new ForgeConfigSpec.Builder();
+		ModConfigSpec.Builder configBuilder = new ModConfigSpec.Builder();
 		setupConfig(configBuilder);
 		GENERAL_SPEC = configBuilder.build();
 	}
 
-	public static ForgeConfigSpec.ConfigValue<Boolean> REPLACE_TREE_FEATURES_FIX;
-	public static ForgeConfigSpec.ConfigValue<Boolean> SKYLANDS_WINTER_FIX;
+	public static ModConfigSpec.ConfigValue<Boolean> REPLACE_TREE_FEATURES_FIX;
+	public static ModConfigSpec.ConfigValue<Boolean> SKYLANDS_WINTER_FIX;
 
-	private static void setupConfig(ForgeConfigSpec.Builder builder) {
+	private static void setupConfig(ModConfigSpec.Builder builder) {
 
 		builder.push("Dynamic Trees + Terralith Compat Mod Config");
 

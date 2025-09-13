@@ -1,6 +1,6 @@
 package maxhyper.dtterralith.cellkits.cell;
 
-import com.ferreusveritas.dynamictrees.cell.MatrixCell;
+import com.dtteam.dynamictrees.systems.cell.MatrixCell;
 
 public class WideDarkOakLeafCell extends MatrixCell {
 
