@@ -1,6 +1,7 @@
 package maxhyper.dtterralith.cellkits;
 
-import com.ferreusveritas.dynamictrees.util.SimpleVoxmap;
+
+import com.dtteam.dynamictrees.api.voxmap.SimpleVoxmap;
 
 import net.minecraft.core.BlockPos;
 

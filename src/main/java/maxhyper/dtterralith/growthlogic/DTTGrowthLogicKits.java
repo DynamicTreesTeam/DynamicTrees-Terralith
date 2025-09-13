@@ -1,8 +1,8 @@
 package maxhyper.dtterralith.growthlogic;
 
 import maxhyper.dtterralith.DynamicTreesTerralith;
-import com.ferreusveritas.dynamictrees.api.registry.Registry;
-import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
+import com.dtteam.dynamictrees.api.registry.Registry;
+import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
 
 public class DTTGrowthLogicKits {
 

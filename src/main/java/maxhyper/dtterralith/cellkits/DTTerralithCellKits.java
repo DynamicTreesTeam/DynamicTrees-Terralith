@@ -2,16 +2,15 @@ package maxhyper.dtterralith.cellkits;
 
 import maxhyper.dtterralith.DynamicTreesTerralith;
 import maxhyper.dtterralith.cellkits.cell.*;
-import com.ferreusveritas.dynamictrees.api.cell.Cell;
-import com.ferreusveritas.dynamictrees.api.cell.CellKit;
-import com.ferreusveritas.dynamictrees.api.cell.CellNull;
-import com.ferreusveritas.dynamictrees.api.cell.CellSolver;
-import com.ferreusveritas.dynamictrees.api.registry.Registry;
-import com.ferreusveritas.dynamictrees.cell.CellKits;
-import com.ferreusveritas.dynamictrees.cell.MetadataCell;
-import com.ferreusveritas.dynamictrees.cell.NormalCell;
-import com.ferreusveritas.dynamictrees.util.SimpleVoxmap;
-import net.minecraft.resources.ResourceLocation;
+import com.dtteam.dynamictrees.api.cell.Cell;
+import com.dtteam.dynamictrees.api.cell.CellKit;
+import com.dtteam.dynamictrees.api.cell.CellNull;
+import com.dtteam.dynamictrees.api.cell.CellSolver;
+import com.dtteam.dynamictrees.api.registry.Registry;
+import com.dtteam.dynamictrees.api.voxmap.SimpleVoxmap;
+import com.dtteam.dynamictrees.systems.cell.CellKits;
+import com.dtteam.dynamictrees.systems.cell.MetadataCell;
+import com.dtteam.dynamictrees.systems.cell.NormalCell;
 
 public class DTTerralithCellKits {
 
@@ -19,7 +18,7 @@ public class DTTerralithCellKits {
 		registry.registerAll(SPARSE, POPLAR, WIDE_DARK_OAK);
 	}
 
-	public static final CellKit SPARSE = new CellKit(new ResourceLocation(DynamicTreesTerralith.MOD_ID, "sparse")) {
+	public static final CellKit SPARSE = new CellKit(DynamicTreesTerralith.location("sparse")) {
 
 		private final Cell sparseBranch = new SparseBranchCell();
 		private final Cell sparseLeaves = new NormalCell(1);
@@ -53,7 +52,7 @@ public class DTTerralithCellKits {
 
 	};
 
-	public static final CellKit POPLAR = new CellKit(new ResourceLocation(DynamicTreesTerralith.MOD_ID, "poplar")) {
+	public static final CellKit POPLAR = new CellKit(DynamicTreesTerralith.location("poplar")) {
 
 		private final Cell poplarBranch = new PoplarBranchCell();
 		private final Cell poplarTopBranch = new PoplarTopBranchCell();

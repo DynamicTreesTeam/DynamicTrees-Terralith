@@ -1,14 +1,14 @@
 package maxhyper.dtterralith.genfeatures;
 
-import com.ferreusveritas.dynamictrees.api.TreeHelper;
-import com.ferreusveritas.dynamictrees.api.network.MapSignal;
-import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
-import com.ferreusveritas.dynamictrees.block.rooty.RootyBlock;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
-import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-import com.ferreusveritas.dynamictrees.systems.genfeature.context.PostGenerationContext;
-import com.ferreusveritas.dynamictrees.systems.nodemapper.DenuderNode;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.api.network.MapSignal;
+import com.dtteam.dynamictrees.block.branch.BranchBlock;
+import com.dtteam.dynamictrees.block.soil.SoilBlock;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
+import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
+import com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext;
+import com.dtteam.dynamictrees.systems.nodemapper.DenuderNode;
+import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.dtteam.dynamictrees.tree.family.Family;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
@@ -38,7 +38,7 @@ public class RandomStrippedBranches extends GenFeature {
         }
         LevelAccessor level = context.level();
         BlockPos rootPos = context.pos();
-        final RootyBlock dirt = TreeHelper.getRooty(level.getBlockState(rootPos));
+        final SoilBlock dirt = TreeHelper.getRooty(level.getBlockState(rootPos));
         if (dirt == null) return false;
 
         Family family = context.species().getFamily();
