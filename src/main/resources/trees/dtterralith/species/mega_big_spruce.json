@@ -14,6 +14,7 @@
       "energy_divisor": 5
     }
   },
+  "seed": "dynamictrees:mega_spruce_seed",
   "leaves_properties": "spruce",
   "mega_species": "dtterralith:giga_spruce",
   "environment_factors" : {

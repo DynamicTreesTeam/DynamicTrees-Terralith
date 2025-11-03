@@ -19,5 +19,8 @@
   "mega_species": "dtterralith:ponderosa_pine",
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Cedar Cone"
+  }
 }

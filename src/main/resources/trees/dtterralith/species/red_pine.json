@@ -24,5 +24,8 @@
   "features" : [
     "conifer_topper",
     "mushroom_rot"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Red Pine Cone"
+  }
 }

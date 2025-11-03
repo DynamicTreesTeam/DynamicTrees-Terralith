@@ -18,5 +18,8 @@
   "acceptable_soils": ["dirt_like"],
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Birch Pine Cone"
+  }
 }

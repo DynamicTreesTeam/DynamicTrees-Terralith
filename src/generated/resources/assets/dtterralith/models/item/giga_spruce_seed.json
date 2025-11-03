@@ -1,0 +1,6 @@
+{
+  "parent": "dynamictrees:item/standard_seed",
+  "textures": {
+    "layer0": "dtterralith:item/giga_spruce_seed"
+  }
+}

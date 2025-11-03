@@ -20,5 +20,8 @@
   "perfect_biomes": { "type": "coniferous" },
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Dwarf Pine Cone"
+  }
 }
