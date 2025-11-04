@@ -1,9 +1,12 @@
+import me.modmuss50.mpp.ReleaseType
+
 plugins {
     id 'java-library'
     id 'maven-publish'
     id 'net.neoforged.moddev' version '2.0.107'
     id 'idea'
     id 'eclipse'
+    id 'me.modmuss50.mod-publish-plugin' version '1.1.0'
 }
 
 tasks.named('wrapper', Wrapper).configure {
@@ -166,6 +169,7 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_license            : mod_license,
             mod_version            : mod_version,
             mod_authors            : mod_authors,
+            mod_credits            : mod_credits,
             mod_description        : mod_description,
             dynamicTreesVersion     : dynamicTreesVersion,
             dynamicTreesPlusVersion : dynamicTreesPlusVersion,
@@ -193,6 +197,55 @@ publishing {
         maven {
             url "file://${project.projectDir}/repo"
         }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/repo"
+        }
+        var mavenUsername = project.findProperty("harleyOConnorMavenUsername")?.toString() ?: System.getenv("MAVEN_USERNAME")
+        var mavenPassword = project.findProperty("harleyOConnorMavenPassword")?.toString() ?: System.getenv("MAVEN_PASSWORD")
+        if (mavenUsername == null || mavenPassword == null) {
+            logger.log(LogLevel.WARN,"Credentials for maven not detected; it will be disabled.")
+            return
+        }
+        maven {
+            name = "HarleyOConnor"
+            url = "https://harleyoconnor.com/maven"
+            credentials {
+                username = mavenUsername
+                password = mavenPassword
+            }
+        }
+    }
+}
+
+def changelogFile = file("build/changelog.txt")
+
+publishMods {
+    file = jar.archiveFile
+    displayName = "${mod_name.replace(' ','')}-NeoForge-${minecraft_version} ${project.version}"
+    if (changelogFile.exists()) {
+        changelog.set(changelogFile.getText())
+    }
+    type = ReleaseType.of(versionType.toUpperCase())
+    modLoaders.add("neoforge")
+
+    curseforge {
+        projectId = "852886"
+        projectSlug = "dynamic-trees-terralith" // Required for discord webhook
+        accessToken = curseApiKey ?: System.getenv("CURSEFORGE_API_KEY")
+        minecraftVersions.add("1.21.1")
+        requires("dynamictrees")
+        requires("terralith")
+        optional("dynamictreesplus")
+    }
+    modrinth {
+        projectId = "o8eM9Cnp"
+        accessToken = modrinthToken ?: System.getenv("MODRINTH_TOKEN")
+        minecraftVersions.add("1.21.1")
+        requires("vdjF5PL5") //dt
+        requires("8oi3bsk5") //terralith
+        optional("qaO9Dqpu") //dt+
     }
 }
 
