@@ -91,7 +91,7 @@ sourceSets.main.get().resources {
 dependencies {
     minecraft("net.minecraftforge:forge:$mcVersion-${property("forgeVersion")}")
 
-    implementation(fg.deobf("curse.maven:dynamictrees-252818:6410558"))
+    implementation(fg.deobf("curse.maven:dynamictrees-252818:7171232"))
     implementation(fg.deobf("curse.maven:dynamictreesplus-478155:6540795"))
     implementation(fg.deobf("curse.maven:terralith-513688:5351328"))
     implementation(fg.deobf("curse.maven:jade-324717:${property("jadeVersion")}"))
