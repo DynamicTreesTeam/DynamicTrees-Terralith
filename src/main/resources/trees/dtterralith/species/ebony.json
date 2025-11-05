@@ -14,5 +14,8 @@
     "hot": 0.75,
     "dry": 0.8
   },
-  "growth_logic_kit": "azalea"
+  "growth_logic_kit": "azalea",
+  "lang_overrides": {
+    "seed": "Ebony Pod"
+  }
 }

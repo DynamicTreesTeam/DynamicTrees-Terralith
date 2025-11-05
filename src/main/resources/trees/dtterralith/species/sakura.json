@@ -37,5 +37,8 @@
         "proportion_of_secondary_species": 0.9
       }
     }
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Dark Cherry Blossom Pit"
+  }
 }

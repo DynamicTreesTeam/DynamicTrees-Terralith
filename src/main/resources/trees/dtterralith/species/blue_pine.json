@@ -19,5 +19,8 @@
   "mega_species": "dtterralith:mega_blue_pine",
   "features" : [
     "conifer_topper"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Blue Pine Cone"
+  }
 }

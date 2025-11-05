@@ -22,5 +22,8 @@
     },
     "mushroom_rot",
     "bee_nest"
-  ]
+  ],
+  "lang_overrides": {
+    "seed": "Maple Samara"
+  }
 }

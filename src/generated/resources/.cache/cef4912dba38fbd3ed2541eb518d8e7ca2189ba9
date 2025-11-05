@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-18T18:36:34.9651012	Item Models: dtterralith
+// 1.20.1	2025-11-05T12:43:48.615903	Item Models: dtterralith
 36a0ec038ea26c6df80f2ccc09eb852f41762390 assets/dtterralith/models/item/amethyst_seed.json
 15b82ff4cd8ce374fa2c5d896a4713cf59cda8fe assets/dtterralith/models/item/ancient_seed.json
 8782f4c1f71c9d6ab9266a491f8e4dc0dbf58283 assets/dtterralith/models/item/birch_pine_seed.json
@@ -8,11 +8,19 @@ b4dc642122ce10847e223fef1b5e09a9767bcfdf assets/dtterralith/models/item/black_po
 9a6e7f40c8273fd8f8558495d9e540323822496f assets/dtterralith/models/item/dwarf_pine_seed.json
 67dd0545f427f8c3546eb23f9b2e1f6856f60225 assets/dtterralith/models/item/dwarf_spruce_seed.json
 9cd6b3c7a4df0feed4d621391f731299eb462ffe assets/dtterralith/models/item/ebony_seed.json
+80b3478295b735f8ee1524cfb581c4c123aaed21 assets/dtterralith/models/item/giga_spruce_seed.json
 fbc86c790507ff4fc9ba52e7403471793752dec8 assets/dtterralith/models/item/jacaranda_seed.json
 d38d6bc30fa2a83a12a8525279e4bbb3ea6fff65 assets/dtterralith/models/item/kapok_seed.json
 b9755ca27d389a88e21991bb223fbe358dfeeb61 assets/dtterralith/models/item/larch_seed.json
 30ceb742daa3e7deda335f061886399e0a16675b assets/dtterralith/models/item/lush_acacia_seed.json
 ac8d5e4048093226c0e0e0ed0fcddef836015235 assets/dtterralith/models/item/maple_seed.json
+8faebc9595d73344c61a790cf6f7a700da78a31a assets/dtterralith/models/item/mega_ancient_seed.json
+c6ddb7ac20c17408c338cd5a33b2e2657cf6db12 assets/dtterralith/models/item/mega_blue_pine_seed.json
+6c276ee3d48fed20ea1446e22a4db4870b4748ef assets/dtterralith/models/item/mega_larch_seed.json
+3773dc20344f4cca5a5994fd1172d632ec94e22d assets/dtterralith/models/item/mega_mirage_seed.json
+e3188817cd1d3650d1866ee31bf2ce7797297e96 assets/dtterralith/models/item/mega_oasis_seed.json
+14928d3d1134a415af10e5592e3540512b3ebd98 assets/dtterralith/models/item/mega_orange_pine_seed.json
+9fa55d04c6934c80c6f295d198f0c021b88837c3 assets/dtterralith/models/item/mega_red_pine_seed.json
 33f3749cea5dd2a7bb695ff53545bb02228d6743 assets/dtterralith/models/item/mirage_branch.json
 dfc9a952c511bfdcb8fcadaf0ed0fa7c56ea42be assets/dtterralith/models/item/mirage_seed.json
 ab50525b92af65b881bb1f59f9ee1cb042ce2dd3 assets/dtterralith/models/item/moonlight_branch.json
