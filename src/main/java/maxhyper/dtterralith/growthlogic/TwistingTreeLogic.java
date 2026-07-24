@@ -11,7 +11,7 @@ import com.dtteam.dynamictrees.utility.CoordUtils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.LevelAccessor;
 
 public class TwistingTreeLogic extends GrowthLogicKit {
@@ -23,7 +23,7 @@ public class TwistingTreeLogic extends GrowthLogicKit {
 	public static final ConfigurationProperty<Integer> SPLIT_ENDS_ENERGY = ConfigurationProperty
 			.integer("split_ends_energy");
 
-	public TwistingTreeLogic(ResourceLocation registryName) {
+	public TwistingTreeLogic(Identifier registryName) {
 		super(registryName);
 	}
 
@@ -49,7 +49,7 @@ public class TwistingTreeLogic extends GrowthLogicKit {
 
 		int count = 0;
 		for (Direction direction : Direction.values()) {
-			int rad = TreeHelper.getRadius(level, pos.offset(direction.getNormal()));
+			int rad = TreeHelper.getRadius(level, pos.offset(direction.getUnitVec3i()));
 			if (rad > 0)
 				count++;
 			probMap[direction.ordinal()] = rad

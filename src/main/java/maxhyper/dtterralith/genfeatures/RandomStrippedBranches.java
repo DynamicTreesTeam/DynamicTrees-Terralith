@@ -11,13 +11,13 @@ import com.dtteam.dynamictrees.tree.TreeHelper;
 import com.dtteam.dynamictrees.tree.family.Family;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
 public class RandomStrippedBranches extends GenFeature {
-    public RandomStrippedBranches(ResourceLocation registryName) {
+    public RandomStrippedBranches(Identifier registryName) {
         super(registryName);
     }
     @Override

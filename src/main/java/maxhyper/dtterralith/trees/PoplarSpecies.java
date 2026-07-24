@@ -13,7 +13,7 @@ import com.dtteam.dynamictrees.api.voxmap.SimpleVoxmap;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -21,26 +21,28 @@ public class PoplarSpecies extends Species {
 
 	public static final TypedRegistry.EntryType<Species> TYPE = createDefaultType(PoplarSpecies::new);
 
-	public PoplarSpecies(ResourceLocation name, Family family, LeavesProperties leavesProperties) {
+	public PoplarSpecies(Identifier name, Family family, LeavesProperties leavesProperties) {
 		super(name, family, leavesProperties);
 	}
 
 	@Override
-	public NodeInspector getNodeInflator(SimpleVoxmap leafMap) {
-		return new NodeInflatorPoplar(this, leafMap);
+	public NodeInspector getNodeInflator(SimpleVoxmap leafMap, int maxRadius) {
+		return new NodeInflatorPoplar(this, leafMap, maxRadius);
 	}
 
 	public static class NodeInflatorPoplar implements NodeInspector {
 
 		private float radius;
 		private BlockPos last;
+		private final int maxRadius;
 
 		Species species;
 		SimpleVoxmap leafMap;
 
-		public NodeInflatorPoplar(Species species, SimpleVoxmap leafMap) {
+		public NodeInflatorPoplar(Species species, SimpleVoxmap leafMap, int maxRadius) {
 			this.species = species;
 			this.leafMap = leafMap;
+			this.maxRadius = Math.min(maxRadius, species.getMaxBranchRadius());
 			last = BlockPos.ZERO;
 		}
 
@@ -67,7 +69,7 @@ public class PoplarSpecies extends Species {
 				for (Direction dir : Direction.values()) {
 					if (!dir.equals(fromDir)) { // Don't count where the signal originated from
 
-						BlockPos dPos = pos.offset(dir.getNormal());
+						BlockPos dPos = pos.relative(dir);
 
 						if (dPos.equals(last)) { // or the branch we just came back from
 							isTwig = false; // on the return journey if the block we just came from is a branch we are
@@ -102,7 +104,6 @@ public class PoplarSpecies extends Species {
 							+ (species.getTapering() * species.getWorldGenTaperingFactor());
 
 					// Ensure the branch is never inflated past it's species maximum
-					int maxRadius = species.getMaxBranchRadius();
 					if (radius > maxRadius) {
 						radius = maxRadius;
 					}
