@@ -1,25 +1,28 @@
 {
-    "carvers": {
-        "air": [
-            "minecraft:cave",
-            "minecraft:cave_extra_underground",
-            "minecraft:canyon"
-        ]
+    "attributes": {
+        "minecraft:visual/fog_color": 14145761,
+        "minecraft:visual/water_fog_color": 2302743,
+        "minecraft:visual/sky_color": 10858685,
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "block_search_extent": 8,
+                "offset": 2,
+                "sound": "minecraft:ambient.cave",
+                "tick_delay": 6000
+            }
+        }
     },
+    "carvers": [
+        "minecraft:cave",
+        "minecraft:cave_extra_underground",
+        "minecraft:canyon"
+    ],
     "downfall": 1.2,
     "effects": {
-        "fog_color": 14145761,
         "foliage_color": 15435072,
+        "dry_foliage_color": 15435072,
         "grass_color": 6463095,
-        "mood_sound": {
-            "block_search_extent": 8,
-            "offset": 2,
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000
-        },
-        "sky_color": 10858685,
-        "water_color": 6388624,
-        "water_fog_color": 2302743
+        "water_color": 6388624
     },
     "features": [
         [],
@@ -77,12 +80,13 @@
             "minecraft:patch_large_fern",
             "minecraft:flower_default",
             "minecraft:patch_grass_taiga_2",
-            "minecraft:brown_mushroom_taiga",
-            "minecraft:red_mushroom_taiga",
             "minecraft:brown_mushroom_normal",
             "minecraft:red_mushroom_normal",
-            "minecraft:patch_sugar_cane",
+            "minecraft:brown_mushroom_taiga",
+            "minecraft:red_mushroom_taiga",
             "minecraft:patch_pumpkin",
+            "minecraft:patch_sugar_cane",
+            "minecraft:patch_firefly_bush_near_water",
             "minecraft:patch_berry_common"
         ],
         [
