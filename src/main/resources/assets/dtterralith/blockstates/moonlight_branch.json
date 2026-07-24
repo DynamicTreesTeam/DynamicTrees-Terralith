@@ -1,7 +1,13 @@
 {
   "variants": {
     "": {
-      "model": "dtterralith:block/moonlight_branch"
+      "type": "dynamictrees:branch",
+      "fabric:type": "dynamictrees:branch",
+      "family": "dtterralith:moonlight",
+      "textures": {
+        "bark": "minecraft:block/stripped_spruce_log",
+        "rings": "minecraft:block/stripped_spruce_log_top"
+      }
     }
   }
 }

@@ -1,5 +1,11 @@
 {
   "variants": {
-    "": { "model": "dynamictrees:block/spruce_root" }
+    "": {
+      "type": "dynamictrees:surface_root",
+      "fabric:type": "dynamictrees:surface_root",
+      "textures": {
+        "bark": "block/spruce_log"
+      }
+    }
   }
 }
