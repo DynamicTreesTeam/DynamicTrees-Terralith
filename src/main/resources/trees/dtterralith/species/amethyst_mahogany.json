@@ -17,12 +17,7 @@
   },
   "leaves_properties": "dtterralith:acacia_amethyst",
   "seed": "dtterralith:amethyst_seed",
-  "environment_factors" : {
-    "cold": 0.2,
-    "dry": 0.4,
-    "hot": 1.1,
-    "wet": 1.1
-  },
+  "preferred_climate": "tropical",
   "perfect_biomes": { "type": "jungle" },
   "features" : [
     {

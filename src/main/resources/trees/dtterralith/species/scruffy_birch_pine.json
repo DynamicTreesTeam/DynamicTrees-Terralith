@@ -14,10 +14,7 @@
   },
   "leaves_properties": "dtterralith:birch_scruffy_conifer",
   "seed": "dtterralith:birch_pine_seed",
-  "environment_factors" : {
-    "hot": 0.50,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "coniferous" },
   "features" : [
     "conifer_topper"

@@ -13,9 +13,7 @@
     }
   },
   "leaves_properties": "dtterralith:birch_conifer",
-  "environment_factors" : {
-    "hot": 0.50
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "conifer" },
   "acceptable_soils": ["dirt_like"]
 }

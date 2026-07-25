@@ -7,10 +7,7 @@
   "growth_rate": 0.2,
   "soil_longevity": 10,
   "leaves_properties": "dtterralith:mangrove_sparse",
-  "environment_factors" : {
-    "cold": 0.5,
-    "dry": 0.5
-  },
+  "preferred_climate": "temperate",
   "generate_seed": false,
   "generate_sapling": false,
   "perfect_biomes": { "type": "swamp" },

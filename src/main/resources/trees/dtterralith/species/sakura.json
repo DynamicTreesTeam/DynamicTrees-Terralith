@@ -7,10 +7,7 @@
   "leaves_properties": "dtterralith:dark_oak_sakura",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-    "hot": 0.5,
-    "dry": 0.75
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "names_or": [".*sakura.*", ".*cherry.*"] },
   "common_override": { "name": "terralith:sakura.*" },
   "features" : [

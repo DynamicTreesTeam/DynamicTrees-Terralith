@@ -6,10 +6,6 @@
   "lowest_branch_height": 3,
   "growth_rate": 0.1,
   "leaves_properties": "dtterralith:acacia_sparse",
-  "environment_factors" : {
-    "cold": 0.25,
-    "nether": 0.75,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "savanna" }
 }

@@ -17,11 +17,7 @@
   "seed": "dynamictrees:mega_spruce_seed",
   "leaves_properties": "spruce",
   "mega_species": "dtterralith:giga_spruce",
-  "environment_factors" : {
-    "hot": 0.50,
-    "dry": 0.25,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "common_override": { "name": "minecraft:.*giant_tree_taiga.*" },
   "perfect_biomes": { "name": "minecraft:.*giant_tree_taiga.*" },
   "features" : [

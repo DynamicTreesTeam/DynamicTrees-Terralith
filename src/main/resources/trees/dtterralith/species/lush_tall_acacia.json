@@ -8,11 +8,7 @@
   "leaves_properties": "dtterralith:azalea_canopy",
   "seed": "dtterralith:lush_acacia_seed",
   "growth_logic_kit": "dtterralith:tall_deciduous",
-  "environment_factors" : {
-    "cold": 0.25,
-    "nether": 0.75,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "savanna" },
   "features" : [
     {

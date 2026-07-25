@@ -7,11 +7,7 @@
   "growth_rate": 0.7,
   "soil_longevity": 8,
   "leaves_properties": "dtterralith:jungle_windswept",
-  "environment_factors": {
-    "sparse": 1.1,
-    "hot": 0.5,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "growth_logic_kit": "azalea",
   "features": [
     {

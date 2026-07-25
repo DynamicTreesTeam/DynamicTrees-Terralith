@@ -7,10 +7,7 @@
   "growth_rate": 0.7,
   "soil_longevity": 2,
   "leaves_properties": "dtterralith:dark_oak_red_azalea",
-  "environment_factors": {
-    "hot": 0.5,
-    "cold": 0.5
-  },
+  "preferred_climate": "temperate",
   "growth_logic_kit": "azalea",
   "perfect_biomes": { "name": "terralith:temperate_highlands" },
   "acceptable_soils": ["dirt_like"],
