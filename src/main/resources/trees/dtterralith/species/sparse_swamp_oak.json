@@ -8,10 +8,7 @@
   "growth_rate": 0.2,
   "soil_longevity": 10,
   "leaves_properties": "dtterralith:oak_sparse",
-  "environment_factors" : {
-    "cold": 0.5,
-    "dry": 0.5
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "swamp" },
   "acceptable_soils": ["dirt_like", "water_like"],
   "features" : [

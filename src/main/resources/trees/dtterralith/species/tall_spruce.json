@@ -14,9 +14,7 @@
     }
   },
   "leaves_properties": "spruce",
-  "environment_factors" : {
-
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "coniferous" },
   "acceptable_soils": ["dirt_like"],
   "world_gen_acceptable_soils": ["snow_like"],

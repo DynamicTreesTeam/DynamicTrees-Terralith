@@ -8,13 +8,13 @@ import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulation
 import com.dtteam.dynamictrees.systems.growthlogic.context.PositionalSpeciesContext;
 
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class TallDeciduousLogic extends GrowthLogicKit {
 
 	public static final ConfigurationProperty<Integer> TRUNK_UP_BOOST = ConfigurationProperty.integer("trunk_up_boost");
 
-	public TallDeciduousLogic(final ResourceLocation registryName) {
+	public TallDeciduousLogic(final Identifier registryName) {
 		super(registryName);
 	}
 

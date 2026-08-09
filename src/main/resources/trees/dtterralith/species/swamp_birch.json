@@ -8,10 +8,7 @@
   "growth_rate": 0.8,
   "soil_longevity": 10,
   "leaves_properties": "birch",
-  "environment_factors" : {
-    "cold": 0.5,
-    "dry": 0.5
-  },
+  "preferred_climate": "temperate",
   "common_override": { "name": "terralith:orchid_swamp" },
   "perfect_biomes": { "type": "swamp" },
   "generate_sapling": true,

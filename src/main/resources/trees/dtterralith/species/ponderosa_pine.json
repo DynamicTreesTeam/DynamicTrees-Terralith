@@ -13,10 +13,7 @@
     }
   },
   "leaves_properties": "dtterralith:oak_tall_conifer",
-  "environment_factors" : {
-    "hot": 0.50,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "seed": "dtterralith:cedar_seed",
   "perfect_biomes": { "type": "coniferous" },
   "features" : [

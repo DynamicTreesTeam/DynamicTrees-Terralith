@@ -5,10 +5,6 @@
   "lowest_branch_height": 6,
   "growth_rate": 1.0,
   "leaves_properties": "dtterralith:spruce_sparse",
-  "environment_factors" : {
-    "hot": 0.50,
-    "dry": 0.25,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "cold" }
 }

@@ -13,10 +13,7 @@
     }
   },
   "leaves_properties": "dtterralith:oak_twilight",
-  "environment_factors" : {
-    "sparse": 0.80,
-    "dry": 0.50
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "spooky" },
   "acceptable_soils": ["dirt_like"]
 }

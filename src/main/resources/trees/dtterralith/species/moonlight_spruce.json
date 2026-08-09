@@ -15,9 +15,7 @@
   "leaves_properties": "dtterralith:spruce_moonlight",
   "generate_seed": true,
   "generate_sapling": true,
-  "environment_factors" : {
-
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "name": ".*moonlight.*" },
   "acceptable_soils": ["dirt_like"],
   "features" : [

@@ -11,11 +11,7 @@
     "properties": { "energy_divisor": 6 }
   },
   "leaves_properties": "spruce",
-  "environment_factors" : {
-    "hot": 0.50,
-    "dry": 0.25,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "type": "coniferous" },
   "mega_species": "dtterralith:mega_big_spruce",
   "features" : [

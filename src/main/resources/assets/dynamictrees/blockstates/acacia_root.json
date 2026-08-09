@@ -1,5 +1,11 @@
 {
   "variants": {
-    "": { "model": "dynamictrees:block/acacia_root" }
+    "": {
+      "type": "dynamictrees:surface_root",
+      "fabric:type": "dynamictrees:surface_root",
+      "textures": {
+        "bark": "block/acacia_log"
+      }
+    }
   }
 }

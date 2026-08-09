@@ -13,10 +13,7 @@
     }
   },
   "leaves_properties": "dtterralith:spruce_tall_conifer",
-  "environment_factors" : {
-    "hot": 0.50,
-    "wet": 0.75
-  },
+  "preferred_climate": "temperate",
   "seed": "dtterralith:black_poplar_seed",
   "perfect_biomes": { "type": "coniferous" },
   "mega_species": "dtterralith:mega_big_spruce",

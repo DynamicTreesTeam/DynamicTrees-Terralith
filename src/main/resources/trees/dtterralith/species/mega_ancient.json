@@ -8,11 +8,7 @@
   "max_branch_radius": 24,
   "leaves_properties": "dtterralith:dark_oak_ancient",
   "world_gen_leaf_map_height": 64,
-  "environment_factors" : {
-    "dry": 0.5,
-    "hot": 0.7,
-    "cold": 0.7
-  },
+  "preferred_climate": "temperate",
   "perfect_biomes": { "name": ".*mirage.*" },
   "features" : [
     {

@@ -1,24 +1,28 @@
 {
-    "carvers": {
-        "air": [
-            "minecraft:cave",
-            "minecraft:cave_extra_underground",
-            "minecraft:canyon"
-        ]
+    "attributes": {
+        "minecraft:visual/fog_color": 14866371,
+        "minecraft:visual/water_fog_color": 329011,
+        "minecraft:visual/sky_color": 14865331,
+        "minecraft:audio/ambient_sounds": {
+            "mood": {
+                "block_search_extent": 8,
+                "offset": 2,
+                "sound": "minecraft:ambient.cave",
+                "tick_delay": 6000
+            }
+        },
+        "minecraft:gameplay/snow_golem_melts": true
     },
+    "carvers": [
+        "minecraft:cave",
+        "minecraft:cave_extra_underground",
+        "minecraft:canyon"
+    ],
     "downfall": 0,
     "effects": {
-        "fog_color": 14866371,
         "foliage_color": 10387789,
-        "mood_sound": {
-            "block_search_extent": 8,
-            "offset": 2,
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000
-        },
-        "sky_color": 14865331,
-        "water_color": 9600102,
-        "water_fog_color": 329011
+        "dry_foliage_color": 10387789,
+        "water_color": 9600102
     },
     "features": [
         [],
@@ -66,7 +70,6 @@
             "terralith:savanna/shattered/teeth"
         ],
         [],
-        [],
         [
             "minecraft:glow_lichen",
             "minecraft:patch_tall_grass",
@@ -75,8 +78,9 @@
             "minecraft:patch_grass_savanna",
             "minecraft:brown_mushroom_normal",
             "minecraft:red_mushroom_normal",
+            "minecraft:patch_pumpkin",
             "minecraft:patch_sugar_cane",
-            "minecraft:patch_pumpkin"
+            "minecraft:patch_firefly_bush_near_water"
         ],
         [
             "minecraft:freeze_top_layer"
@@ -131,10 +135,16 @@
                 "weight": 1
             },
             {
+                "type": "minecraft:armadillo",
+                "maxCount": 3,
+                "minCount": 2,
+                "weight": 3
+            },
+            {
                 "type": "minecraft:wolf",
                 "maxCount": 4,
                 "minCount": 4,
-                "weight": 8
+                "weight": 5
             }
         ],
         "misc": [],
@@ -153,6 +163,12 @@
             },
             {
                 "type": "minecraft:zombie_villager",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 5
+            },
+            {
+                "type": "minecraft:zombie_horse",
                 "maxCount": 1,
                 "minCount": 1,
                 "weight": 5
@@ -191,12 +207,6 @@
         "underground_water_creature": [
             {
                 "type": "minecraft:glow_squid",
-                "maxCount": 6,
-                "minCount": 4,
-                "weight": 10
-            },
-            {
-                "type": "minecraft:axolotl",
                 "maxCount": 6,
                 "minCount": 4,
                 "weight": 10
